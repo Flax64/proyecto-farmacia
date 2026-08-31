@@ -1,1 +1,0 @@
-# CLARA_proyecto
