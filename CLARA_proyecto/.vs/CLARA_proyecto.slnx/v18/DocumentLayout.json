@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\CLARA_proyecto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{239229F6-195C-0E6B-26CD-DE571D26192E}|CLARA_proyecto\\CLARA_proyecto.vbproj|c:\\users\\flavi\\desktop\\8vo semestre\\ingenieria de software\\clara_proyecto\\clara_proyecto\\ui\\menu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{239229F6-195C-0E6B-26CD-DE571D26192E}|CLARA_proyecto\\CLARA_proyecto.vbproj|solutionrelative:clara_proyecto\\ui\\menu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{239229F6-195C-0E6B-26CD-DE571D26192E}|CLARA_proyecto\\CLARA_proyecto.vbproj|c:\\users\\flavi\\desktop\\8vo semestre\\ingenieria de software\\clara_proyecto\\clara_proyecto\\ui\\menu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{239229F6-195C-0E6B-26CD-DE571D26192E}|CLARA_proyecto\\CLARA_proyecto.vbproj|solutionrelative:clara_proyecto\\ui\\menu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.vb",
+              "DocumentMoniker": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\CLARA_proyecto\\CLARA_proyecto\\UI\\Menu.vb",
+              "RelativeDocumentMoniker": "CLARA_proyecto\\UI\\Menu.vb",
+              "ToolTip": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\CLARA_proyecto\\CLARA_proyecto\\UI\\Menu.vb",
+              "RelativeToolTip": "CLARA_proyecto\\UI\\Menu.vb",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-08-27T20:09:44.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\CLARA_proyecto\\CLARA_proyecto\\UI\\Menu.vb",
+              "RelativeDocumentMoniker": "CLARA_proyecto\\UI\\Menu.vb",
+              "ToolTip": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\CLARA_proyecto\\CLARA_proyecto\\UI\\Menu.vb [Design]",
+              "RelativeToolTip": "CLARA_proyecto\\UI\\Menu.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-08-27T20:04:21.564Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

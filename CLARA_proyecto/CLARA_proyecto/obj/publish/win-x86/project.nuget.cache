@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "wRmh7fv6Br4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\CLARA_proyecto\\CLARA_proyecto\\CLARA_proyecto.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\flavi\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.8\\microsoft.net.illink.tasks.10.0.8.nupkg.sha512",
+    "C:\\Users\\flavi\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\10.0.8\\microsoft.netcore.app.runtime.win-x86.10.0.8.nupkg.sha512",
+    "C:\\Users\\flavi\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\10.0.8\\microsoft.windowsdesktop.app.runtime.win-x86.10.0.8.nupkg.sha512",
+    "C:\\Users\\flavi\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\10.0.8\\microsoft.aspnetcore.app.runtime.win-x86.10.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

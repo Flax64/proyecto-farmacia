@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>\\wsl.localhost\Ubuntu-22.04\home\flavio\proyecto_farmacia</_PublishTargetUrl>
+    <History>True|2026-03-30T20:45:31.6634430Z||;True|2026-03-30T14:15:14.8408348-06:00||;True|2026-03-30T13:49:31.3351830-06:00||;True|2026-03-25T18:44:04.8752748-06:00||;True|2026-03-25T18:13:56.2851874-06:00||;True|2026-03-25T16:19:00.3406349-06:00||;False|2026-03-25T16:18:11.9388494-06:00||;True|2026-03-25T15:47:19.5629772-06:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

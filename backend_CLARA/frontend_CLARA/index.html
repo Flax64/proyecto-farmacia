@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLARA - Sistema de Farmacia</title>
+    <style>
+        /* ================= ESTILOS GLOBALES ================= */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f3f3f3; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .container { background-color: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 600px; text-align: center; }
+        h1, h2 { color: #333; }
+        .hidden { display: none !important; }
+
+        /* ================= ESTILOS DEL LOGIN ================= */
+        .form-group { margin-bottom: 20px; text-align: left; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .btn-blue { background-color: #0066cc; color: white; border: none; padding: 12px 20px; width: 100%; font-size: 16px; font-weight: bold; cursor: pointer; border-radius: 4px; margin-top: 10px; }
+        .btn-blue:hover { background-color: #0052a3; }
+
+        /* ================= ESTILOS DEL MENÚ ================= */
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 20px; }
+        .btn-menu { background-color: white; color: #333; border: 2px solid #0066cc; padding: 20px; font-size: 14px; font-weight: bold; cursor: pointer; border-radius: 8px; transition: all 0.3s; }
+        .btn-menu:hover:not(:disabled) { background-color: #e6f2ff; }
+        
+        /* Estilo para los botones bloqueados (Sin permisos) */
+        .btn-menu:disabled { border-color: #ccc; color: #aaa; background-color: #f9f9f9; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+
+    <div id="vista-login" class="container">
+        <h2>INICIAR SESIÓN</h2>
+        <div class="form-group">
+            <label for="txtCorreo">Correo:</label>
+            <input type="email" id="txtCorreo" placeholder="ejemplo@dominio.com">
+        </div>
+        <div class="form-group">
+            <label for="txtPassword">Contraseña:</label>
+            <input type="password" id="txtPassword">
+        </div>
+        <button id="btnLogin" class="btn-blue" onclick="iniciarSesion()">INICIAR SESIÓN</button>
+        <p id="lblMensajeLogin" style="color: red; font-size: 14px;"></p>
+    </div>
+
+    <div id="vista-menu" class="container hidden">
+        <h1 id="lblBienvenida">Bienvenido</h1>
+        <p>Selecciona un módulo (Opciones habilitadas según tu rol):</p>
+        
+        <div class="menu-grid">
+            <button id="btnVentas" class="btn-menu" disabled>Ventas</button>
+            <button id="btnCompras" class="btn-menu" disabled>Compras</button>
+            <button id="btnMedicamentos" class="btn-menu" disabled>Medicamentos</button>
+            <button id="btnEmpleados" class="btn-menu" disabled>Empleados</button>
+            <button id="btnCitas" class="btn-menu" disabled>Citas</button>
+            <button id="btnConsulta" class="btn-menu" disabled>Registrar Consulta</button>
+            <button id="btnHorarios" class="btn-menu" disabled>Horarios</button>
+            <button id="btnReportes" class="btn-menu" disabled>Reportes</button>
+        </div>
+        <br>
+        <button class="btn-blue" style="background-color: #dc3545;" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </div>
+
+    <script>
+        // ⚠️ CRÍTICO: Cambia "localhost" por la IP Pública de tu EC2 en AWS
+        const API_URL = "http://18.225.5.154:5133/api"; 
+        
+        // Sesión Global simulada
+        let SesionGlobal = { correo: "", idUsuario: 0, permisos: [] };
+
+        async function iniciarSesion() {
+            const correo = document.getElementById("txtCorreo").value.trim();
+            const password = document.getElementById("txtPassword").value;
+            const btnLogin = document.getElementById("btnLogin");
+            const lblMensaje = document.getElementById("lblMensajeLogin");
+
+            if (!correo || !password) {
+                lblMensaje.innerText = "Por favor, ingresa tu correo y contraseña.";
+                return;
+            }
+
+            lblMensaje.innerText = "";
+            btnLogin.innerText = "Conectando...";
+            btnLogin.disabled = true;
+
+            try {
+                // PASO 1: Llamada a la API de Login
+                const respuesta = await fetch(`${API_URL}/auth/login`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: correo, password: password })
+                });
+
+                if (respuesta.ok) {
+                    const datos = await respuesta.json();
+                    SesionGlobal.correo = correo;
+                    SesionGlobal.idUsuario = datos.idUsuario; // Ajusta si tu API devuelve el ID diferente
+
+                    // PASO 2: Cargar permisos y mostrar menú
+                    await cargarPermisosYMostrarMenu(correo);
+                } else {
+                    const error = await respuesta.json();
+                    lblMensaje.innerText = error.message || error.error || "Credenciales incorrectas.";
+                }
+            } catch (ex) {
+                lblMensaje.innerText = "Error de conexión con el servidor de AWS.";
+                console.error(ex);
+            } finally {
+                btnLogin.innerText = "INICIAR SESIÓN";
+                btnLogin.disabled = false;
+            }
+        }
+
+        async function cargarPermisosYMostrarMenu(correo) {
+            try {
+                // Llamada a la API de Roles
+                const respuesta = await fetch(`${API_URL}/perfil/rol/${correo}`);
+                
+                if (respuesta.ok) {
+                    const datos = await respuesta.json();
+                    
+                    document.getElementById("lblBienvenida").innerText = `Bienvenido ${datos.nombre}`;
+                    SesionGlobal.permisos = datos.permisos; // Guardamos el array de permisos
+
+                    // Evaluamos los permisos tal cual lo hacías en Visual Basic
+                    document.getElementById("btnVentas").disabled = !SesionGlobal.permisos.includes("CRUD de ventas");
+                    document.getElementById("btnEmpleados").disabled = !SesionGlobal.permisos.includes("CRUD de empleados");
+                    document.getElementById("btnCitas").disabled = !SesionGlobal.permisos.includes("CRUD de citas");
+                    document.getElementById("btnMedicamentos").disabled = !SesionGlobal.permisos.includes("CRUD de medicamentos");
+                    document.getElementById("btnCompras").disabled = !SesionGlobal.permisos.includes("CRUD de compras");
+                    document.getElementById("btnConsulta").disabled = !SesionGlobal.permisos.includes("Registrar consulta");
+                    document.getElementById("btnHorarios").disabled = !SesionGlobal.permisos.includes("Horario de medicos");
+                    document.getElementById("btnReportes").disabled = !SesionGlobal.permisos.includes("Reportes");
+
+                    // Cambiamos de pantalla (Ocultamos Login, Mostramos Menú)
+                    document.getElementById("vista-login").classList.add("hidden");
+                    document.getElementById("vista-menu").classList.remove("hidden");
+                } else {
+                    alert("No se pudieron cargar los permisos de seguridad.");
+                }
+            } catch (ex) {
+                alert("Error conectando con la API para validar permisos.");
+                console.error(ex);
+            }
+        }
+
+        function cerrarSesion() {
+            // Limpiar datos y regresar al login
+            SesionGlobal = { correo: "", idUsuario: 0, permisos: [] };
+            document.getElementById("txtPassword").value = "";
+            document.getElementById("vista-menu").classList.add("hidden");
+            document.getElementById("vista-login").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>

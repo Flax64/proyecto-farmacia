@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\flavi\Desktop\8vo Semestre\Ingenieria de software\CLARA_proyecto\CLARA_proyecto\My Project\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="UI\CambiarPassword1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\CambiarPassword2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\CambiarPassword3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\CitasConfirmar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\CitasCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\CitasDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\CitasRead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\CitasUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\ComprasCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\ComprasDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\ComprasRead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\ComprasUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\DatosMedico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\EditarPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\EmpleadosCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\EmpleadosDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\EmpleadosRead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\EmpleadosUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\HorariosCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\HorariosDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\HorariosRead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\HorariosUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\MedicamentosCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\MedicamentosDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\MedicamentosRead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\MedicamentosUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Registrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\RegistrarConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\ReporteInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Reportes%28Expedientes%29.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\ReporteVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\RolesCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\RolesDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\RolesRead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\RolesUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\VentasCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\VentasDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\VentasRead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\VentasUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
