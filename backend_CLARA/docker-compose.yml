@@ -22,6 +22,7 @@ services:
     container_name: api_farmacia
     environment:
       TZ: "America/Monterrey"
+      ASPNETCORE_URLS: "http://+:5133"
     ports:
       - "5133:5133"              # Expuesto para que el JavaScript del cliente pueda consultarlo
     depends_on:
