@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("CLARA_proyecto"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fdfc8271e0df8ca30266b05988f53536285d9f3"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84b77a56f22d3f7c65e795108a7a61298a4c52da"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("CLARA_proyecto"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("CLARA_proyecto"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

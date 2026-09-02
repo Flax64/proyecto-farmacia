@@ -34,7 +34,7 @@ if (app.Environment.IsDevelopment())
 
 //app.UseHttpsRedirection();
 
-// 👇 ESTO VA DESPUÉS DEL BUILD 👇
+// ESTO VA DESPUÉS DEL BUILD 
 app.UseCors("PermitirTodo");
 
 app.UseAuthorization();
