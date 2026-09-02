@@ -44,7 +44,7 @@ Public Class CambiarPassword3
 
             Using client As New HttpClient(manejador)
                 ' Verifica que el puerto 5133 sea el correcto en tu computadora
-                Dim urlAPI As String = $"http://localhost:5133/api/perfil/cambiar-password/{SesionGlobal.correo}"
+                Dim urlAPI As String = $"http://54.89.200.65:5133/api/perfil/cambiar-password/{SesionGlobal.correo}"
 
                 ' Fíjate que aquí usamos PutAsync (porque en C# pusimos HttpPut)
                 Dim response As HttpResponseMessage = Await client.PutAsync(urlAPI, content)

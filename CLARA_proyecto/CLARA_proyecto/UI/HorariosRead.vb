@@ -6,7 +6,7 @@ Public Class HorariosRead
     Private todosLosHorarios As New List(Of HorarioReadVB)()
     Private listaFiltroActual As New List(Of HorarioReadVB)()
 
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/horarios"
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/horarios"
 
     Private paginaActual As Integer = 1
     Private ReadOnly elementosPorPagina As Integer = 6

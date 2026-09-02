@@ -6,7 +6,7 @@ services:
     image: nginx:alpine          # Usamos una versión súper ligera de Nginx
     container_name: web_farmacia
     ports:
-      - "80:80"                  # Expone el puerto web estándar hacia internet
+      - "8080:80"                  # Expone el puerto web estándar hacia internet
     volumes:
       - ./frontend_CLARA:/usr/share/nginx/html  # Inyecta tu carpeta 'frontend' directo al motor de Nginx
     networks:

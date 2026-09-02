@@ -4,7 +4,7 @@ Imports System.Text.Json
 
 Public Class RegistrarConsulta
     Private clienteHttp As HttpClient
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/consultas"
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/consultas"
 
     '  Fíjate que aquí ya dice RegistrarConsulta_Load
     Private Async Sub RegistrarConsulta_Load(sender As Object, e As EventArgs) Handles MyBase.Load

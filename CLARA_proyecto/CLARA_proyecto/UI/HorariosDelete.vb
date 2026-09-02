@@ -3,7 +3,7 @@
 Public Class HorariosDelete
     Private idHorario As Integer
     Private clienteHttp As HttpClient
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/horarios"
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/horarios"
 
     Public Sub New(id As Integer)
         InitializeComponent()

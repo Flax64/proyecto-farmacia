@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\",
+  "WorkspaceRootPath": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integraci\u00F3n y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10BE5E9D-7CCE-C70E-3A3D-B37C66860AAA}|backend_CLARA\\backend_CLARA.csproj|c:\\users\\flavi\\desktop\\8vo semestre\\ingenieria de software\\backend_clara\\backend_clara\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10BE5E9D-7CCE-C70E-3A3D-B37C66860AAA}|backend_CLARA\\backend_CLARA.csproj|solutionrelative:backend_clara\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10BE5E9D-7CCE-C70E-3A3D-B37C66860AAA}|backend_CLARA\\backend_CLARA.csproj|c:\\users\\flavi\\desktop\\8vo semestre\\ingenieria de software\\backend_clara\\backend_clara\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10BE5E9D-7CCE-C70E-3A3D-B37C66860AAA}|backend_CLARA\\backend_CLARA.csproj|c:\\users\\flavi\\desktop\\9no semestre\\integraci\u00F3n y despliegue continuos\\proyecto farmacia\\backend_clara\\backend_clara\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10BE5E9D-7CCE-C70E-3A3D-B37C66860AAA}|backend_CLARA\\backend_CLARA.csproj|solutionrelative:backend_clara\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10BE5E9D-7CCE-C70E-3A3D-B37C66860AAA}|backend_CLARA\\backend_CLARA.csproj|c:\\users\\flavi\\desktop\\8vo semestre\\ingenieria de software\\backend_clara\\backend_clara\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10BE5E9D-7CCE-C70E-3A3D-B37C66860AAA}|backend_CLARA\\backend_CLARA.csproj|c:\\users\\flavi\\desktop\\9no semestre\\integraci\u00F3n y despliegue continuos\\proyecto farmacia\\backend_clara\\backend_clara\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10BE5E9D-7CCE-C70E-3A3D-B37C66860AAA}|backend_CLARA\\backend_CLARA.csproj|solutionrelative:backend_clara\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10BE5E9D-7CCE-C70E-3A3D-B37C66860AAA}|backend_CLARA\\backend_CLARA.csproj|c:\\users\\flavi\\desktop\\9no semestre\\integraci\u00F3n y despliegue continuos\\proyecto farmacia\\backend_clara\\backend_clara\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10BE5E9D-7CCE-C70E-3A3D-B37C66860AAA}|backend_CLARA\\backend_CLARA.csproj|solutionrelative:backend_clara\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,13 +46,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CitasController.cs",
-              "DocumentMoniker": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\Controllers\\CitasController.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integraci\u00F3n y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\Controllers\\CitasController.cs",
               "RelativeDocumentMoniker": "backend_CLARA\\Controllers\\CitasController.cs",
-              "ToolTip": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\Controllers\\CitasController.cs",
+              "ToolTip": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integraci\u00F3n y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\Controllers\\CitasController.cs",
               "RelativeToolTip": "backend_CLARA\\Controllers\\CitasController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAgwEAAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAIwEAAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T17:31:50.443Z",
               "EditorCaption": ""
@@ -61,9 +61,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integraci\u00F3n y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\Program.cs",
               "RelativeDocumentMoniker": "backend_CLARA\\Program.cs",
-              "ToolTip": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\Program.cs",
+              "ToolTip": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integraci\u00F3n y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\Program.cs",
               "RelativeToolTip": "backend_CLARA\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -71,15 +71,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integraci\u00F3n y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "backend_CLARA\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integraci\u00F3n y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\Controllers\\AuthController.cs",
               "RelativeToolTip": "backend_CLARA\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABcBAAAAAAAAAAAmwCgBAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T11:49:29.187Z"
+              "WhenOpened": "2026-05-07T11:49:29.187Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -18,7 +18,7 @@ Public Class Reportes_Expedientes_
         manejador.ServerCertificateCustomValidationCallback = Function(s, cert, chain, sslPolicyErrors) True
         clienteHttp = New HttpClient(manejador)
         ' Asegúrate de que este puerto coincida con tu Backend en C#
-        clienteHttp.BaseAddress = New Uri("http://localhost:5133/")
+        clienteHttp.BaseAddress = New Uri("http://54.89.200.65:5133/")
     End Sub
 
     Private Async Sub Reportes_Expedientes__Load(sender As Object, e As EventArgs) Handles MyBase.Load

@@ -4,7 +4,7 @@ Imports System.Text.Json
 
 Public Class Menu
     Private clienteHttp As HttpClient
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/perfil"
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/perfil"
 
     Private Async Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim manejador As New HttpClientHandler()

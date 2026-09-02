@@ -5,7 +5,7 @@ Imports System.Text.RegularExpressions
 
 Public Class EmpleadosUpdate
     Private clienteHttp As HttpClient
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/empleados" ' Ajusta tu puerto
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/empleados" ' Ajusta tu puerto
 
     ' VARIABLES PÚBLICAS PARA RECIBIR LOS DATOS DESDE LA TABLA
     <System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)>

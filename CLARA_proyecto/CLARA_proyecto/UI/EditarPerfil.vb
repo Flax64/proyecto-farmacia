@@ -68,7 +68,7 @@ Public Class EditarPerfil
             Dim jsonString As String = JsonSerializer.Serialize(datosActualizados)
             Dim content As New StringContent(jsonString, System.Text.Encoding.UTF8, "application/json")
 
-            Dim urlAPI As String = $"http://localhost:5133/api/perfil/actualizar/{SesionGlobal.correo}"
+            Dim urlAPI As String = $"http://54.89.200.65:5133/api/perfil/actualizar/{SesionGlobal.correo}"
             Dim response As HttpResponseMessage = Await clienteHttp.PutAsync(urlAPI, content)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -100,7 +100,7 @@ Public Class EditarPerfil
     ' =======================================================
     Private Async Function CargarGeneros() As Task
         Try
-            Dim urlAPI As String = "http://localhost:5133/api/registro/generos"
+            Dim urlAPI As String = "http://54.89.200.65:5133/api/registro/generos"
             Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -133,7 +133,7 @@ Public Class EditarPerfil
     ' =======================================================
     Private Async Function CargarPerfilUsuario() As Task
         Try
-            Dim urlAPI As String = $"http://localhost:5133/api/perfil/{correo}"
+            Dim urlAPI As String = $"http://54.89.200.65:5133/api/perfil/{correo}"
             Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 

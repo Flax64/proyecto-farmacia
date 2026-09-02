@@ -33,7 +33,7 @@ Public Class VentasRead
     ' La función que va a C#, pide el JSON y llena la tabla
     Private Async Function CargarVentas() As Task
         Try
-            Dim urlAPI As String = "http://localhost:5133/api/ventas/lista"
+            Dim urlAPI As String = "http://54.89.200.65:5133/api/ventas/lista"
             Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
 
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()

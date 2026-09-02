@@ -74,7 +74,7 @@ Public Class Registrar
                 btn_registrar.Enabled = False
                 btn_registrar.Text = "Registrando..."
 
-                Dim urlAPI As String = "http://localhost:5133/api/Registro/registar"
+                Dim urlAPI As String = "http://54.89.200.65:5133/api/Registro/registar"
                 Dim response As HttpResponseMessage = Await client.PostAsync(urlAPI, content)
                 Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -120,7 +120,7 @@ Public Class Registrar
 
         Using client As New HttpClient(manejador)
             Try
-                Dim urlAPI As String = "http://localhost:5133/api/Registro/generos"
+                Dim urlAPI As String = "http://54.89.200.65:5133/api/Registro/generos"
                 Dim response As HttpResponseMessage = Await client.GetAsync(urlAPI)
                 Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 

@@ -34,7 +34,7 @@ Public Class VentasDelete
             btn_borrar.Text = "Borrando..."
             btn_borrar.Enabled = False
 
-            Dim urlEliminar As String = $"http://localhost:5133/api/ventas/{idVentaABorrar}"
+            Dim urlEliminar As String = $"http://54.89.200.65:5133/api/ventas/{idVentaABorrar}"
             Dim response As HttpResponseMessage = Await clienteHttp.DeleteAsync(urlEliminar)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 

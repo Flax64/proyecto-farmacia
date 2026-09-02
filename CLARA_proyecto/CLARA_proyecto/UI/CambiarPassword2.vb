@@ -49,7 +49,7 @@ Public Class CambiarPassword2
         ' IMPORTANTE: Le pasamos el manejador al cliente para que aplique la regla
         Using client As New HttpClient(manejador)
             Try
-                Dim urlAPI = "http://localhost:5133/api/auth/restablecer-password"
+                Dim urlAPI = "http://54.89.200.65:5133/api/auth/restablecer-password"
                 Dim response = Await client.PostAsync(urlAPI, content)
                 Dim responseBody = Await response.Content.ReadAsStringAsync()
 

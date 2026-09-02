@@ -14,7 +14,7 @@ Public Class ReporteVentas
         Dim manejador As New HttpClientHandler()
         manejador.ServerCertificateCustomValidationCallback = Function(s, cert, chain, sslPolicyErrors) True
         clienteHttp = New HttpClient(manejador)
-        clienteHttp.BaseAddress = New Uri("http://localhost:5133/")
+        clienteHttp.BaseAddress = New Uri("http://54.89.200.65:5133/")
     End Sub
 
     '  2. PREPARAMOS LA TABLA AL ABRIR LA PANTALLA

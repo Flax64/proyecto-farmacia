@@ -4,7 +4,7 @@ Imports System.Text.Json
 
 Public Class HorariosUpdate
     Private clienteHttp As HttpClient
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/horarios"
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/horarios"
     Private idHorarioActual As Integer
 
     ' Recibimos el ID desde la tabla

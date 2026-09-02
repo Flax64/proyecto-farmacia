@@ -6,7 +6,7 @@ Public Class RolesUpdate
     Private idRolSeleccionado As Integer
     Private nombreOriginal As String
     Private clienteHttp As HttpClient
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/roles" ' <-- Ajusta tu IP/Puerto
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/roles" ' <-- Ajusta tu IP/Puerto
 
     ' --- CONSTRUCTOR ---
     ' Recibimos el ID y el Nombre desde la pantalla principal

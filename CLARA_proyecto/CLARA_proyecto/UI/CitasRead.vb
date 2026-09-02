@@ -6,7 +6,7 @@ Public Class CitasRead
     Private todasLasCitas As New List(Of CitaReadVB)()
     Private listaFiltroActual As New List(Of CitaReadVB)()
 
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/citas"
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/citas"
 
     Private paginaActual As Integer = 1
     Private ReadOnly elementosPorPagina As Integer = 6

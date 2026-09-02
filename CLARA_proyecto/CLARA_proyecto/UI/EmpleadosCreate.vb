@@ -5,7 +5,7 @@ Imports System.Text.RegularExpressions
 
 Public Class EmpleadosCreate
     Private clienteHttp As HttpClient
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/empleados" ' Ajusta tu puerto
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/empleados" ' Ajusta tu puerto
 
     ' --- AL ABRIR LA PANTALLA ---
     Private Async Sub EmpleadosCreate_Load(sender As Object, e As EventArgs) Handles MyBase.Load

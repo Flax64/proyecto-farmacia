@@ -645,11 +645,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\backend_CLARA.csproj",
+      "projectUniqueName": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integración y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\backend_CLARA.csproj",
       "projectName": "backend_CLARA",
-      "projectPath": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\backend_CLARA.csproj",
+      "projectPath": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integración y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\backend_CLARA.csproj",
       "packagesPath": "C:\\Users\\flavi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\obj\\",
+      "outputPath": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integración y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

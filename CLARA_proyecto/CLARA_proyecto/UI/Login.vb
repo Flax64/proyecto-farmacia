@@ -87,7 +87,7 @@ Public Class Login
         manejador.ServerCertificateCustomValidationCallback = Function(sen, cert, chain, sslPolicyErrors) True
         Using client As New HttpClient(manejador)
             Try
-                Dim urlApi As String = "http://localhost:5133/api/auth/login"
+                Dim urlApi As String = "http://54.89.200.65:5133/api/auth/login"
                 Dim response As HttpResponseMessage = Await client.PostAsync(urlApi, content)
                 Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 

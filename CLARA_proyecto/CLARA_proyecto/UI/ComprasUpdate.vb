@@ -17,7 +17,7 @@ Public Class ComprasUpdate
         Dim manejador As New HttpClientHandler()
         manejador.ServerCertificateCustomValidationCallback = Function(s, cert, chain, sslPolicyErrors) True
         clienteHttp = New HttpClient(manejador)
-        clienteHttp.BaseAddress = New Uri("http://localhost:5133/")
+        clienteHttp.BaseAddress = New Uri("http://54.89.200.65:5133/")
     End Sub
 
     Private Async Sub ComprasEdit_Load(sender As Object, e As EventArgs) Handles MyBase.Load

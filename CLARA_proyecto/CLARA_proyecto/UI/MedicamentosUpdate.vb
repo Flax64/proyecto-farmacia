@@ -4,7 +4,7 @@ Imports System.Text.Json
 
 Public Class MedicamentosUpdate
     Private clienteHttp As HttpClient
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/medicamentos"
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/medicamentos"
 
     ' --- VARIABLES PÚBLICAS PARA RECIBIR LOS DATOS DE LA TABLA ---
     <System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)>

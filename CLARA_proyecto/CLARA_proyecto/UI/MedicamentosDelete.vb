@@ -5,7 +5,7 @@ Public Class MedicamentosDelete
     ' Variable para guardar el ID del medicamento a desactivar
     Private idMedicamentoSeleccionado As Integer
     Private clienteHttp As HttpClient
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/medicamentos"
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/medicamentos"
 
     ' --- CONSTRUCTOR ---
     ' Recibe el ID desde la tabla principal al hacer clic en el basurero

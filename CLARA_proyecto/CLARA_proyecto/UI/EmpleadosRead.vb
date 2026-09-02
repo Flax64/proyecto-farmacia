@@ -6,7 +6,7 @@ Public Class EmpleadosRead
     Private todosLosEmpleados As New List(Of UsuarioVB)()
     Private listaFiltroActual As New List(Of UsuarioVB)()
 
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/empleados" ' Ajusta tu puerto
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/empleados" ' Ajusta tu puerto
 
     Private Async Sub EmpleadosRead_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If SesionGlobal.Permisos IsNot Nothing Then

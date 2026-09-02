@@ -3,7 +3,7 @@
 Public Class CitasConfirmar
     Private idCita As Integer
     Private clienteHttp As HttpClient
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/citas"
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/citas"
 
     ' Recibimos el ID desde la ventana anterior
     Public Sub New(id As Integer)

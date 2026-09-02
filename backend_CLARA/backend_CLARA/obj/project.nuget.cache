@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IAJx6zukEgE=",
+  "dgSpecHash": "Y0k/EGTG41A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\backend_CLARA.csproj",
+  "projectFilePath": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integración y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\backend_CLARA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\flavi\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512",
     "C:\\Users\\flavi\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
@@ -25,9 +25,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\backend_CLARA.csproj",
+      "projectPath": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integración y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\backend_CLARA.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\flavi\\Desktop\\8vo Semestre\\Ingenieria de software\\backend_CLARA\\backend_CLARA\\backend_CLARA.csproj",
+      "filePath": "C:\\Users\\flavi\\Desktop\\9no Semestre\\Integración y despliegue continuos\\Proyecto Farmacia\\backend_CLARA\\backend_CLARA\\backend_CLARA.csproj",
       "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
         "net10.0"

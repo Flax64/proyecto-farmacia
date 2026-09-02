@@ -52,7 +52,7 @@ Public Class CambiarPassword1
         Dim content As New StringContent(jsonRequest, Encoding.UTF8, "application/json")
 
         Try
-            Dim urlAPI As String = "http://localhost:5133/api/auth/solicitar-enlace"
+            Dim urlAPI As String = "http://54.89.200.65:5133/api/auth/solicitar-enlace"
             Dim response As HttpResponseMessage = Await clienteHttp.PostAsync(urlAPI, content)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -101,7 +101,7 @@ Public Class CambiarPassword1
     Private Async Sub temporizadorPolling_Tick(sender As Object, e As EventArgs) Handles temporizadorPolling.Tick
         Try
             ' Le susurramos a la API: "¿Ya le dio clic?"
-            Dim urlAPI As String = $"http://localhost:5133/api/auth/estado-enlace/{tokenMágico}"
+            Dim urlAPI As String = $"http://54.89.200.65:5133/api/auth/estado-enlace/{tokenMágico}"
             Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
 
             If response.IsSuccessStatusCode Then

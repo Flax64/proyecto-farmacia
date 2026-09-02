@@ -51,7 +51,7 @@ Public Class VentasUpdate
 
     Private Async Function CargarDatosDeLaVenta() As Task
         Try
-            Dim urlAPI As String = $"http://localhost:5133/api/ventas/{idVentaActual}"
+            Dim urlAPI As String = $"http://54.89.200.65:5133/api/ventas/{idVentaActual}"
             Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -249,7 +249,7 @@ Public Class VentasUpdate
             Dim jsonString As String = JsonSerializer.Serialize(datosActualizados)
             Dim content As New StringContent(jsonString, Encoding.UTF8, "application/json")
 
-            Dim urlAPI As String = $"http://localhost:5133/api/ventas/{idVentaActual}"
+            Dim urlAPI As String = $"http://54.89.200.65:5133/api/ventas/{idVentaActual}"
             Dim response As HttpResponseMessage = Await clienteHttp.PutAsync(urlAPI, content)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -280,7 +280,7 @@ Public Class VentasUpdate
     End Sub
     Private Async Function CargarMetodosDePagoBD() As Task
         Try
-            Dim urlAPI As String = "http://localhost:5133/api/ventas/metodos-pago"
+            Dim urlAPI As String = "http://54.89.200.65:5133/api/ventas/metodos-pago"
             Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -308,7 +308,7 @@ Public Class VentasUpdate
     End Function
     Private Async Function CargarBuscadorMedicamentos() As Task
         Try
-            Dim urlAPI As String = "http://localhost:5133/api/ventas/medicamentos"
+            Dim urlAPI As String = "http://54.89.200.65:5133/api/ventas/medicamentos"
             Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -340,7 +340,7 @@ Public Class VentasUpdate
     End Function
     Private Async Function CargarBuscadorPacientes() As Task
         Try
-            Dim urlAPI As String = "http://localhost:5133/api/ventas/consultas-pendientes"
+            Dim urlAPI As String = "http://54.89.200.65:5133/api/ventas/consultas-pendientes"
             Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -374,7 +374,7 @@ Public Class VentasUpdate
 
         If respuesta = DialogResult.Yes Then
             Try
-                Dim urlAPI As String = $"http://localhost:5133/api/ventas/receta/{consultaSeleccionada.IdConsulta}"
+                Dim urlAPI As String = $"http://54.89.200.65:5133/api/ventas/receta/{consultaSeleccionada.IdConsulta}"
                 Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
                 Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 

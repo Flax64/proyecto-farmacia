@@ -203,7 +203,7 @@ Public Class VentasCreate
             Dim jsonString As String = JsonSerializer.Serialize(datosVenta)
             Dim content As New StringContent(jsonString, Encoding.UTF8, "application/json")
 
-            Dim urlAPI As String = "http://localhost:5133/api/ventas/crear"
+            Dim urlAPI As String = "http://54.89.200.65:5133/api/ventas/crear"
             Dim response As HttpResponseMessage = Await clienteHttp.PostAsync(urlAPI, content)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -243,7 +243,7 @@ Public Class VentasCreate
     ' 2. Función que va a la API por los métodos
     Private Async Function CargarMetodosDePagoBD() As Task
         Try
-            Dim urlAPI As String = "http://localhost:5133/api/ventas/metodos-pago"
+            Dim urlAPI As String = "http://54.89.200.65:5133/api/ventas/metodos-pago"
             Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -271,7 +271,7 @@ Public Class VentasCreate
     End Function
     Private Async Function CargarBuscadorMedicamentos() As Task
         Try
-            Dim urlAPI As String = "http://localhost:5133/api/ventas/medicamentos"
+            Dim urlAPI As String = "http://54.89.200.65:5133/api/ventas/medicamentos"
             Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -301,7 +301,7 @@ Public Class VentasCreate
     End Function
     Private Async Function CargarBuscadorPacientes() As Task
         Try
-            Dim urlAPI As String = "http://localhost:5133/api/ventas/consultas-pendientes"
+            Dim urlAPI As String = "http://54.89.200.65:5133/api/ventas/consultas-pendientes"
             Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
             Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 
@@ -336,7 +336,7 @@ Public Class VentasCreate
 
         If respuesta = DialogResult.Yes Then
             Try
-                Dim urlAPI As String = $"http://localhost:5133/api/ventas/receta/{consultaSeleccionada.IdConsulta}"
+                Dim urlAPI As String = $"http://54.89.200.65:5133/api/ventas/receta/{consultaSeleccionada.IdConsulta}"
                 Dim response As HttpResponseMessage = Await clienteHttp.GetAsync(urlAPI)
                 Dim responseBody As String = Await response.Content.ReadAsStringAsync()
 

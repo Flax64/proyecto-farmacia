@@ -282,7 +282,7 @@ namespace backend_CLARA.Controllers
             string miCorreo = "farmacia4850@gmail.com";
             string passwordApp = "fzat yxzn kjby kmpe";
 
-            string urlVerificacion = $"http://18.225.5.154:5133/api/auth/verificar-clic?t={token}";
+            string urlVerificacion = $"http://54.89.200.65:5133/api/auth/verificar-clic?t={token}";
 
             string cuerpoHtml = $@"
                 <div style='font-family: Arial; text-align: center; padding: 20px;'>

@@ -6,7 +6,7 @@ Public Class MedicamentosRead
     Private todosLosMedicamentos As New List(Of MedicamentoReadVB)()
     Private listaFiltroActual As New List(Of MedicamentoReadVB)()
 
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/medicamentos" ' <-- Ajusta tu puerto
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/medicamentos" ' <-- Ajusta tu puerto
 
     '  VARIABLES DE PAGINACIÓN
     Private paginaActual As Integer = 1

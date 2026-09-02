@@ -5,7 +5,7 @@ Public Class RolesRead
     Private clienteHttp As HttpClient
     Private todosLosRoles As New List(Of RolVB)()
     Private listaFiltroActual As New List(Of RolVB)()
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/roles" ' <-- Ajusta tu IP/Puerto
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/roles" ' <-- Ajusta tu IP/Puerto
 
     Private Async Sub RolesRead_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim manejador As New HttpClientHandler()

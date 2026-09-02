@@ -5,7 +5,7 @@ Public Class EmpleadosDelete
     ' Variable para recibir el ID desde la tabla principal
     <System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)>
     Public Property EmpleadoId As Integer
-    Private ReadOnly urlBase As String = "http://localhost:5133/api/empleados"
+    Private ReadOnly urlBase As String = "http://54.89.200.65:5133/api/empleados"
 
     ' --- BOTÓN CANCELAR ---
     Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
